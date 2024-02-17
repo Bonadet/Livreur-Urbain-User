@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'firebase_options.dart';
 import 'functions/functions.dart';
 import 'functions/notifications.dart';
 import 'pages/loadingPage/loadingpage.dart';
@@ -9,7 +10,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   checkInternetConnection();
   initMessaging();
   runApp(const MyApp());
@@ -38,7 +41,7 @@ class MyApp extends StatelessWidget {
             builder: (context, value, child) {
               return MaterialApp(
                   debugShowCheckedModeBanner: false,
-                  title: 'product name',
+                  title: 'Livreur Urbain User',
                   theme: ThemeData(),
                   home: const LoadingPage());
             }));

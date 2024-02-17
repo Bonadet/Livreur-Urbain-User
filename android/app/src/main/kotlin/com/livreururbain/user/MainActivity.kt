@@ -1,4 +1,4 @@
-package com.project.name
+package com.livreururbain.user
 
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.android.FlutterFragmentActivity

@@ -41,8 +41,8 @@ bool internet = true;
 
 //base url
 String url =
-    'your base url here'; //add '/' at the end of the url as 'https://url.com/'
-String mapkey = 'your map key here';
+    'https://livreururbain.com/'; //add '/' at the end of the url as 'https://url.com/'
+String mapkey = 'AIzaSyCcMjiaqL_dxhOWzJbZOfzcqDx3_99mu1I';
 
 //check internet connection
 
